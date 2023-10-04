@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		009F82012ACDFF6A00FC30C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F82002ACDFF6A00FC30C2 /* AppDelegate.swift */; };
 		009F82032ACDFF6A00FC30C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F82022ACDFF6A00FC30C2 /* SceneDelegate.swift */; };
-		009F82052ACDFF6A00FC30C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F82042ACDFF6A00FC30C2 /* ViewController.swift */; };
-		009F82082ACDFF6A00FC30C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009F82062ACDFF6A00FC30C2 /* Main.storyboard */; };
 		009F820A2ACDFF6D00FC30C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 009F82092ACDFF6D00FC30C2 /* Assets.xcassets */; };
 		009F820D2ACDFF6D00FC30C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009F820B2ACDFF6D00FC30C2 /* LaunchScreen.storyboard */; };
+		009F82152ACE019300FC30C2 /* WishMakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F82142ACE019300FC30C2 /* WishMakerViewController.swift */; };
+		009F82172ACE027100FC30C2 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F82162ACE027100FC30C2 /* UIColor+Extensions.swift */; };
+		009F82192ACE118600FC30C2 /* CustomeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F82182ACE118600FC30C2 /* CustomeSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		009F81FD2ACDFF6A00FC30C2 /* togalkinaPW2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = togalkinaPW2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		009F82002ACDFF6A00FC30C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		009F82022ACDFF6A00FC30C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		009F82042ACDFF6A00FC30C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		009F82072ACDFF6A00FC30C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		009F82092ACDFF6D00FC30C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		009F820C2ACDFF6D00FC30C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		009F820E2ACDFF6D00FC30C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		009F82142ACE019300FC30C2 /* WishMakerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishMakerViewController.swift; sourceTree = "<group>"; };
+		009F82162ACE027100FC30C2 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		009F82182ACE118600FC30C2 /* CustomeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				009F82002ACDFF6A00FC30C2 /* AppDelegate.swift */,
 				009F82022ACDFF6A00FC30C2 /* SceneDelegate.swift */,
-				009F82042ACDFF6A00FC30C2 /* ViewController.swift */,
-				009F82062ACDFF6A00FC30C2 /* Main.storyboard */,
 				009F82092ACDFF6D00FC30C2 /* Assets.xcassets */,
 				009F820B2ACDFF6D00FC30C2 /* LaunchScreen.storyboard */,
 				009F820E2ACDFF6D00FC30C2 /* Info.plist */,
+				009F82142ACE019300FC30C2 /* WishMakerViewController.swift */,
+				009F82162ACE027100FC30C2 /* UIColor+Extensions.swift */,
+				009F82182ACE118600FC30C2 /* CustomeSlider.swift */,
 			);
 			path = togalkinaPW2;
 			sourceTree = "<group>";
@@ -127,7 +130,6 @@
 			files = (
 				009F820D2ACDFF6D00FC30C2 /* LaunchScreen.storyboard in Resources */,
 				009F820A2ACDFF6D00FC30C2 /* Assets.xcassets in Resources */,
-				009F82082ACDFF6A00FC30C2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +140,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				009F82052ACDFF6A00FC30C2 /* ViewController.swift in Sources */,
 				009F82012ACDFF6A00FC30C2 /* AppDelegate.swift in Sources */,
+				009F82152ACE019300FC30C2 /* WishMakerViewController.swift in Sources */,
+				009F82192ACE118600FC30C2 /* CustomeSlider.swift in Sources */,
 				009F82032ACDFF6A00FC30C2 /* SceneDelegate.swift in Sources */,
+				009F82172ACE027100FC30C2 /* UIColor+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		009F82062ACDFF6A00FC30C2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				009F82072ACDFF6A00FC30C2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		009F820B2ACDFF6D00FC30C2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,9 +287,9 @@
 				INFOPLIST_FILE = togalkinaPW2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,9 +314,9 @@
 				INFOPLIST_FILE = togalkinaPW2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -21,17 +21,17 @@ final class WishMakerViewController: UIViewController {
         static let stackLeading: CGFloat = 20
     }
     
-    let title1 = UILabel()
+    private let title1 = UILabel()
     private var slidersHidden = false
     private let toggleButton = UIButton(type: .system)
-    let descriptionn = UILabel()
-    let stack = UIStackView()
-    let colorCodeTextField = UITextField()
-    let applyColorButton = UIButton(type: .system)
+    private let descriptionn = UILabel()
+    private let stack = UIStackView()
+    private let colorCodeTextField = UITextField()
+    private let applyColorButton = UIButton(type: .system)
     
-    let sliderRed = CustomSlider(title: Constants.red, min: Constants.sliderMin, max: Constants.sliderMax)
-    let sliderGreen = CustomSlider(title: Constants.green, min: Constants.sliderMin, max: Constants.sliderMax)
-    let sliderBlue = CustomSlider(title: Constants.blue, min: Constants.sliderMin, max: Constants.sliderMax)
+    private let sliderRed = CustomSlider(title: Constants.red, min: Constants.sliderMin, max: Constants.sliderMax)
+    private let sliderGreen = CustomSlider(title: Constants.green, min: Constants.sliderMin, max: Constants.sliderMax)
+    private let sliderBlue = CustomSlider(title: Constants.blue, min: Constants.sliderMin, max: Constants.sliderMax)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +46,7 @@ final class WishMakerViewController: UIViewController {
         configureDescription()
         configureSliders()
         configureToggleButton()
-        randomChange() //??
+        configureRandomChange()
     }
     
     private func configureTitle() {
@@ -64,14 +64,18 @@ final class WishMakerViewController: UIViewController {
     
     private func configureDescription() {
         descriptionn.translatesAutoresizingMaskIntoConstraints = false
-        descriptionn.text = "This app will bring you joy and will ful ill three of your wishes!\n The first wish is to change the background color" //!!!!
+        descriptionn.text = "This app will bring you joy and will fulfill three of your wishes!\n\nThe first wish is to change the background color"
+        
         descriptionn.font = UIFont.systemFont(ofSize: 16)
         descriptionn.textColor = .textBlue
+        descriptionn.numberOfLines = 0
+        descriptionn.lineBreakMode = .byWordWrapping
         
         view.addSubview(descriptionn)
         NSLayoutConstraint.activate([
-            descriptionn.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            descriptionn.topAnchor.constraint(equalTo: title1.bottomAnchor, constant: 20)
+            descriptionn.topAnchor.constraint(equalTo: title1.bottomAnchor, constant: 20),
+            descriptionn.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            descriptionn.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
         ])
     }
     
@@ -135,7 +139,7 @@ final class WishMakerViewController: UIViewController {
         view.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: 1.0)
     }
     
-    private func randomChange() {
+    private func configureRandomChange() {
         let changeButton = UIButton()
         changeButton.translatesAutoresizingMaskIntoConstraints = false
         changeButton.setTitle("Random colour change", for: .normal)
@@ -146,8 +150,6 @@ final class WishMakerViewController: UIViewController {
         NSLayoutConstraint.activate([
             changeButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             changeButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            ])
+        ])
     }
-    
-    
 }

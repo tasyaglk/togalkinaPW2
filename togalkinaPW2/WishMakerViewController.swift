@@ -124,6 +124,8 @@ final class WishMakerViewController: UIViewController {
         toggleButton.setTitle("Touch me", for: .normal)
         toggleButton.setTitleColor(.textBlue, for: UIControl.State.normal)
         toggleButton.addTarget(self, action: #selector(toggleSliders), for: .touchUpInside)
+        toggleButton.backgroundColor = .slayPink
+        toggleButton.layer.cornerRadius = 8
         
         view.addSubview(toggleButton)
         NSLayoutConstraint.activate([
@@ -145,6 +147,8 @@ final class WishMakerViewController: UIViewController {
         changeButton.setTitle("Random colour change", for: .normal)
         changeButton.setTitleColor(.textBlue, for: UIControl.State.normal)
         changeButton.addTarget(self, action: #selector(randomizer), for: .touchUpInside)
+        changeButton.backgroundColor = .slayPink
+        changeButton.layer.cornerRadius = 8
         
         view.addSubview(changeButton)
         NSLayoutConstraint.activate([
